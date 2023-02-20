@@ -9,9 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, 'public')
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: "Webpack Output",
-    }),
   ],
   mode: 'Production'
 };
