@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -17,7 +18,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader'
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
@@ -29,5 +34,10 @@ module.exports = {
         type: 'asset/resource',
       },
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Webpack Output",
+    }),
+  ],
 };
