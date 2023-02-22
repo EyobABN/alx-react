@@ -3,3 +3,11 @@
   padding: 10px;
   margin: 5px;
 }
+
+li[data-priority="normal"] {
+  color: darkblue;
+}
+
+li[data-priority="urgent"] {
+  color: red;
+}

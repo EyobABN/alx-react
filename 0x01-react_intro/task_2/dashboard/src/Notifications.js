@@ -15,9 +15,9 @@ export default function Notifications() {
       </button>
       <p>Here is the list of notifications</p>
       <ul>
-        <li key={1}>New course available</li>
-        <li key={2}>New resume available</li>
-        <li key={3} dangerouslySetInnerHTML={{__html: getLatestNotification()}}></li>
+        <li key={1} data-priority="normal">New course available</li>
+        <li key={2} data-priority="urgent">New resume available</li>
+        <li key={3} data-priority="urgent" dangerouslySetInnerHTML={{__html: getLatestNotification()}}></li>
       </ul>
       
     </div>
