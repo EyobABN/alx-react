@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 import "./App.css";
 import { getLatestNotification } from "../utils/utils";
 
-
 class App extends Component {
   listCourses = [
     { id: 1, name: "ES6", credit: 60 },
